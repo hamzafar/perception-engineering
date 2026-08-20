@@ -1477,21 +1477,6 @@ function drawTraj(){
   }, { threshold: 0.4 });
   stats.forEach(el=>statIO.observe(el));
 
-  // if(!prefersReduced){
-  //   const fpsEl = document.getElementById('stat-fps');
-  //   const latEl = document.getElementById('stat-latency');
-  //   const gpuEl = document.getElementById('stat-gpu');
-  //   setInterval(()=>{
-  //     const fps = (25 + Math.random()*2).toFixed(1);
-  //     const lat = Math.round(34 + Math.random()*10);
-  //     const gpu = Math.round(88 + Math.random()*6);
-  //     const cpu = Math.round(20 + Math.random()*8);
-  //     fpsEl.textContent = fps + ' FPS';
-  //     latEl.textContent = lat + ' ms';
-  //     gpuEl.textContent = gpu + '% / ' + cpu + '%';
-  //   }, 1800);
-  // }
-
   const toggle = document.querySelector('.navtoggle');
   const links = document.querySelector('.navlinks');
   toggle.addEventListener('click', ()=>{
