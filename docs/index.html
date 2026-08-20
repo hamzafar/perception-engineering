@@ -255,7 +255,7 @@
 .perception-dashboard .thumbs .cell{padding:0;position:relative;height:110px;background:#20252d;}
 .perception-dashboard .thumbs canvas{position:absolute; inset:0; width:100%; height:100%;}
 .perception-dashboard .thumb-tag{position:absolute; top:6px; left:8px; font-size:9px; font-family:"IBM Plex Mono",monospace; color:var(--text3); background:rgba(18,21,26,0.65); padding:2px 6px; border-radius:3px; z-index:3;}
-.perception-dashboard .cockpit{grid-template-columns:220px 1fr 240px;}
+.perception-dashboard .cockpit{ grid-template-columns:220px 1fr 240px;}
 .perception-dashboard .cockpit .cell{background:#15181e;}
 .perception-dashboard .panel-title{font-size:9px; text-transform:uppercase; letter-spacing:0.7px; color:var(--text3); font-family:"IBM Plex Mono",monospace; margin-bottom:10px;}
 .perception-dashboard .indicator{display:flex; align-items:center; gap:8px; padding:5px 0; font-size:12px;}
@@ -304,15 +304,15 @@
 .perception-dashboard .led-row{display:flex;gap:10px;margin-top:4px;flex-wrap:wrap;}
 .perception-dashboard .led{display:flex;align-items:center;gap:4px;font-size:10px;font-family:"IBM Plex Mono",monospace;color:var(--text2);}
 .perception-dashboard .led-dot{width:6px;height:6px;border-radius:50%;}
-@media (max-width: 900px){.perception-dashboard .cockpit{grid-template-columns:1fr;}
+@media (max-width: 900px){.perception-dashboard .cockpit{grid-template-columns:220px 1fr 240px;}
 .perception-dashboard .cockpit .cell{border-bottom:1px solid var(--line);}
-.perception-dashboard .strip{grid-template-columns:1fr 1fr;}
+.perception-dashboard .strip{grid-template-columns:1fr 1fr 1.6fr 1.6fr 1.6fr;}
 .perception-dashboard .thumbs{grid-template-columns:1fr 1fr 1fr;}
 .perception-dashboard .thumbs .cell{height:90px;}}
 @media (max-width: 640px){.perception-dashboard{padding:12px;}
-.perception-dashboard .strip{grid-template-columns:1fr 1fr;}
+.perception-dashboard .strip{grid-template-columns:repeat(5, 1fr);}
 .perception-dashboard .strip .cell{padding:8px 10px;}
-.perception-dashboard .thumbs{grid-template-columns:1fr;}
+.perception-dashboard .thumbs{grid-template-columns:1fr 1fr 1fr;}
 .perception-dashboard .thumbs .cell{height:120px;}
 .perception-dashboard .hero .cell{height:200px;}
 .perception-dashboard .banner{flex-direction:column; align-items:flex-start;}
@@ -322,7 +322,7 @@
 .perception-dashboard .phases-header{flex-direction:column; align-items:flex-start;}
 .perception-dashboard .footer .cell{flex-wrap:wrap;}
 .perception-dashboard .footer-meta{white-space:normal;}}
-@media (max-width: 420px){.perception-dashboard .strip{grid-template-columns:1fr;}}
+@media (max-width: 420px){.perception-dashboard .strip{grid-template-columns:repeat(5, 1fr);}}
 /* Portfolio integration sizing */
 .perception-dashboard-section{overflow:hidden;}
 .perception-dashboard{width:100%; overflow:hidden;}
