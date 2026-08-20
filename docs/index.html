@@ -781,7 +781,7 @@ function updateDashboard(data){
   if(data.cameras) renderCameras();
     if(data.sensors || data.fps!==undefined || data.latency_ms!==undefined ||
       data.objects_count || data.gpu_pct!==undefined || data.cpu_pct!==undefined) renderHeader();
-      if(data.frame_id !== undefined)
+      // if(data.frame_id !== undefined)
   if(data.frame_id !== undefined) {renderFooter();renderReplayProgress();}
   // if(data.ego) renderEgoPanel();
   if(data.ego) {renderEgoPanel();
