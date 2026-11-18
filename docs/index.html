@@ -1258,7 +1258,7 @@ function drawTraj(){
 <div class="stage-label">Unified system</div>
 <div class="stage-rows">
 <div class="prow"><div class="pnum">12</div><div><h4>World objects &amp; live telemetry</h4><p>Nearest-object reasoning, BEV rendering, replay controls and a WebSocket telemetry bridge to a live browser dashboard.</p></div><div class="ptag">INTEGRATION</div></div>
-<div class="prow"><div class="pnum">13</div><div><h4>Ported the sensor-fusion core from Python to C++ (Eigen, pybind11)</h4><p>Reducing latency from 273.7 to 153.9 ms with validated parity against the reference implementation.</p></div><div class="ptag">1.78× LOWER LATENCY</div></div>
+<div class="prow"><div class="pnum">13</div><div><h4>Ported Sensor Fusion to C++ & Optimized Latency</h4><p>Ported the sensor-fusion core to C++ (Eigen, pybind11) and batched four-camera YOLO26m-seg inference into one TensorRT FP16 call. Reduced mean end-to-end latency by 57% (263.5 → 112.3 ms) across 110-frame CARLA replay on RTX 2060, WSL2, with validated output parity.</p></div><div class="ptag">2.35× LOWER LATENCY</div></div>
 </div>
 </div>
 </div>
